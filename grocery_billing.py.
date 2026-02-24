@@ -1,0 +1,24 @@
+pricea = int(input("Enter price of item a: "))
+unita = int(input("Enter units of item a: "))
+priceb = int(input("Enter price of item b: "))
+unitb = int(input("Enter unit of item a: "))
+pricec = int(input("Enter price of item c: "))
+unitc = int(input("Enter unit of item c: "))
+priced = int(input("Enter price of item d: "))
+unitd = int(input("Enter unit of item d: "))
+pricee = int(input("Enter price of item e: "))
+unite = int(input("Enter unit of item e: "))
+
+total = (pricea*unita)+(priceb*unitb)+(pricec*unitc)+(priced*unitd)+(pricee*unite)
+print("Original Total:", total)
+
+if total > 100:
+    discount = total * 0.10
+else:
+    discount = 0.0
+
+print("Discount:", discount)
+
+final_amount = total - discount
+print("Final Amount:", final_amount)
+
